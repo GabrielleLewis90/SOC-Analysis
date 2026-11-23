@@ -1,5 +1,6 @@
 SOC Analysis Project
 This project demonstrates a Security Operations Center (SOC) workflow using Wazuh SIEM to detect, investigate, and respond to security events on an Ubuntu endpoint. It covers SSH authentication monitoring, privileged command execution, File Integrity Monitoring (FIM), VirusTotal threat intelligence enrichment, automated response, and post-incident verification.
+
 Table of Contents
 - Executive Summary
 - Environment
@@ -12,6 +13,7 @@ Table of Contents
 - Verification
 - Conclusion
 - Author
+
 Executive Summary
 The purpose of this project was to demonstrate practical SOC analyst skills through the deployment and configuration of Wazuh SIEM in a controlled virtual environment. The exercise involved generating security events, detecting and investigating alerts, integrating VirusTotal for threat intelligence enrichment, and implementing automated incident response.
 
@@ -23,6 +25,7 @@ The project objectives were to:
 - Investigate the file and its VirusTotal results.
 - Perform an appropriate response and remediation action.
 - Document the investigation using a SOC analyst reporting approach.
+
 Environment
 The project was conducted in an isolated virtual environment using the following tools and technologies:
 - Oracle VirtualBox: Hosted and managed the virtual machines.
@@ -34,6 +37,7 @@ The project was conducted in an isolated virtual environment using the following
 - EICAR test file: Used to test malware detection in the controlled lab environment.
 Alert Detection and Investigation
 Three security activities were generated on the Ubuntu endpoint to demonstrate Wazuh's ability to monitor authentication events and privileged command execution.
+
 1. Failed SSH Authentication
 Activity: ssh wronguser@localhost
 - Timestamp: November 6, 2026, 16:54:13
@@ -153,6 +157,7 @@ This project demonstrated a practical SOC workflow using Wazuh SIEM and VirusTot
 The EICAR test file was detected in /root on November 20, 2026, at 13:27:22. The initial Wazuh alert reported 64 positive detections, while the subsequent VirusTotal review showed 65. Further investigation established that the file was a harmless test file designed to trigger antivirus detection, not evidence of an actual malware infection.
 
 Wazuh's Active Response mechanism executed the configured removal procedure, and subsequent verification confirmed that /root/eicar.com was no longer present and that the Ubuntu agent remained active. Overall, the project provided practical experience in security event monitoring, alert investigation, threat intelligence enrichment, automated response, and post-incident verification.
+
 Author
 Gabrielle Lewis
 Cybersecurity Student | Aspiring SOC Analyst  
