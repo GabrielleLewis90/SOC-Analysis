@@ -1,4 +1,5 @@
 SOC Analysis Project
+
 This project demonstrates a Security Operations Center (SOC) workflow using Wazuh SIEM to detect, investigate, and respond to security events on an Ubuntu endpoint. It covers SSH authentication monitoring, privileged command execution, File Integrity Monitoring (FIM), VirusTotal threat intelligence enrichment, automated response, and post-incident verification.
 
 Table of Contents
